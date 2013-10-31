@@ -13,20 +13,20 @@ var compare = function(choice1, choice2) {
         else
             return "paper wins";
     }
-    
-    if (choice1 == "scissors") {
+    else if (choice1 == "scissors") {
         if(choice2 == "paper")
             return "scissors wins";
         else
             return "rock wins";
     }
-    
-    if (choice1 == "paper") {
+    else if (choice1 == "paper") {
         if(choice2 == "rock")
             return "paper wins";
         else
             return "scissors wins";
     }
+    else
+        return "user input incorrect, computer wins"
 }
 //----------------------------------------------
 
